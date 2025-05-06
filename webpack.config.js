@@ -10,7 +10,8 @@ module.exports = {
   entry: {
     index: "./src/scripts/index.js", // Скрипт для menu.html
     menu: "./src/scripts/menu.js",
-    aboutUs: "./src/scripts/aboutUs.js"
+    aboutUs: "./src/scripts/aboutUs.js",
+    contact: "./src/scripts/contact.js"
   },
 
   // Настройки выходных файлов
@@ -71,6 +72,11 @@ module.exports = {
       chunks: ['aboutUs'], // Какие chunks (из entry) подключать
     }),
     
+    new HtmlWebpackPlugin({
+      filename: 'contact.html', // Имя выходного файла
+      template: './src/pages/contact.html', // Шаблон для генерации
+      chunks: ['contact'], // Какие chunks (из entry) подключать
+    }),
     // Плагин для копирования статических файлов
   ],
   // Настройки dev-сервера для разработки
