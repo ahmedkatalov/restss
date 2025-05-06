@@ -1,2 +1,2 @@
-const ddev = document.getElementById('content');
-ddev.textContent = "safasf22"
+const div = document.getElementById("content")
+div.textContent = "posijfoiwerjfoiwerjfoi"
