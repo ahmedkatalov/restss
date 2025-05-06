@@ -1,2 +1,2 @@
 const div = document.getElementById("content")
-div.textContent = "posijfoiwerjfoiwerjfoi"
+div.textContent = "Ahmadddd"
